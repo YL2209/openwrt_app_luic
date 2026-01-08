@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: 2024-03-15 12:00+0800\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: applications/luci-app-wan-mac/root/usr/share/luci/menu.d/luci-app-wan-mac.json:3
+msgid "WAN MAC"
+msgstr "MAC 地址生成器"
+
+#: applications/luci-app-wan-mac/htdocs/luci-static/resources/view/wan_mac.js:31
+msgid "Select or input Prefix first!"
+msgstr "请先选择或输入前缀！"
+
+#: applications/luci-app-wan-mac/htdocs/luci-static/resources/view/wan_mac.js:36
+msgid "Prefix is a Multicast address!"
+msgstr "前缀为多播地址！"
+
+#: applications/luci-app-wan-mac/htdocs/luci-static/resources/view/wan_mac.js:75
+msgid "WAN MAC address"
+msgstr "WAN MAC 地址"
+
+#: applications/luci-app-wan-mac/htdocs/luci-static/resources/view/wan_mac.js:75
+msgid "Change the MAC address of WAN port. <br>Note that modifying the MAC address may cause the IP address to change."
+msgstr "更改 WAN 端口的 MAC 地址。 <br>注意：修改 MAC 地址可能导致 IP 地址变更。"
+
+#: applications/luci-app-wan-mac/htdocs/luci-static/resources/view/wan_mac.js:78
+msgid "Global Settings"
+msgstr "全局设置"
+
+#: applications/luci-app-wan-mac/htdocs/luci-static/resources/view/wan_mac.js:82
+msgid "Enable"
+msgstr "启用"
+
+#: applications/luci-app-wan-mac/htdocs/luci-static/resources/view/wan_mac.js:85
+msgid "MAC Address Settings"
+msgstr "MAC 地址设置"
+
+#: applications/luci-app-wan-mac/htdocs/luci-static/resources/view/wan_mac.js:86
+msgid "Select a prefix and click the「Randomly Generate Using Prefix」button to generate a MAC address"
+msgstr "选择一个前缀并点击『使用前缀随机生成』按钮生成 MAC 地址"
+
+#: applications/luci-app-wan-mac/htdocs/luci-static/resources/view/wan_mac.js:90
+msgid "MAC address prefix"
+msgstr "MAC 地址前缀"
+
+#: applications/luci-app-wan-mac/htdocs/luci-static/resources/view/wan_mac.js:90
+msgid "Supports「000000」format"
+msgstr "支持「000000」格式"
+
+#: applications/luci-app-wan-mac/htdocs/luci-static/resources/view/wan_mac.js:109
+msgid "MAC address"
+msgstr "MAC 地址"
+
+#: applications/luci-app-wan-mac/htdocs/luci-static/resources/view/wan_mac.js:109
+msgid "Supports「00:00:00:00:00:00」format"
+msgstr "支持「00:00:00:00:00:00」格式"
+
+#: applications/luci-app-wan-mac/htdocs/luci-static/resources/view/wan_mac.js:113
+msgid "Randomly Generate Using Prefix"
+msgstr "使用前缀随机生成"
