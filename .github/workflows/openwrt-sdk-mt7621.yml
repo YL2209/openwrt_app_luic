@@ -26,6 +26,7 @@ env:
   TARGET_SYATEM: ramips
   SUBTARGET: mt7621
   RELEASE_VERSION: 24.10.5
+  TAR_NAME: zst
   TOOLCHAIN: gcc-13.3.0_musl
   PACKAGE: luci-app-strongswan-swanctl
   PACKAGE_IPK: strongswan
@@ -60,7 +61,7 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        if [ "$RELEASE_VERSION" == "24.10.0" ]; then
+        if [ "${{ env.TAR_NAME }}" == "zst" ]; then
           EXTENSION="tar.zst"
         else
           EXTENSION="tar.xz"
@@ -68,7 +69,7 @@ jobs:
         SDK_NAME="openwrt-sdk-${{ env.RELEASE_VERSION }}-${{ env.TARGET_SYATEM }}-${{ env.SUBTARGET }}_${{ env.TOOLCHAIN }}.Linux-x86_64.${EXTENSION}"
         FULL_URL="${{ env.BASE_URL }}/${{ env.RELEASE_VERSION }}/targets/${{ env.TARGET_SYATEM }}/${{ env.SUBTARGET }}/${SDK_NAME}"
         wget $FULL_URL
-        if [ "${{ env.RELEASE_VERSION }}" == "24.10.0" ]; then
+        if [ "${{ env.TAR_NAME }}" == "zst" ]; then
           mkdir sdk && tar --zstd -xvf $SDK_NAME -C ./sdk --strip-components=1
         else
           mkdir sdk && tar -xvf $SDK_NAME -C ./sdk --strip-components=1
