@@ -1,0 +1,11 @@
+{
+  "luci-app-campus-network-login": {
+    "description": "Grant UCI access for luci-app-campus-network-login",
+    "read": {
+      "uci": [ "campus_network" ]
+    },
+    "write": {
+      "uci": [ "campus_network" ]
+    }
+  }
+}
